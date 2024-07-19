@@ -2,6 +2,7 @@ import { projects } from '@/data'
 import React from 'react'
 import { CardBody, CardContainer, CardItem } from './ui/3d-card'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Projects = () => {
   return (
@@ -31,7 +32,7 @@ const Projects = () => {
                                 rotateZ={-10}
                                 className="w-full mt-4"
                             >
-                            <img
+                            <Image
                                 src={project.img}
                                 height="1000"
                                 width="1000"
@@ -53,7 +54,7 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </CardItem>
-                            <Link href={project.link}>
+                            <Link href={project.link} target='_blank' rel='noopener noreferrer'>
                                 <CardItem
                                     translateZ={20}
                                     translateX={40}

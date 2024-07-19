@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { blogs } from "@/data";
 
 const Blogs = () => {
@@ -12,7 +13,7 @@ const Blogs = () => {
                 <Link href={blog.url} passHref rel="noopener noreferrer" target="_blank">
                     <div className="flex items-center">
                         <div className="relative h-40 w-40">
-                            <img src={blog.image} alt={blog.title} className="w-full h-full rounded-l-lg object-cover" />
+                            <Image src={blog.image} alt={blog.title} width={50} height={50} className="w-full h-full rounded-l-lg object-cover" />
                         </div>
                         <div className="p-4 flex-1">
                         <h2 className="text-lg font-bold mb-2">{blog.title}</h2>
