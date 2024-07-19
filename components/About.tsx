@@ -16,14 +16,19 @@ const About = () => {
                 </LinkPreview> 
                 , an NGO focused on North Korean human rights, I&apos;ve used technology to drive impactful change. Currently, I&apos;m pursuing a {" "}
                 <LinkPreview
-                url="https://se4gd.lutsoftware.com/"
+                url="https://www.lut.fi/en"
                 className="text-white"
                 >
                 Master&apos;s Degree in Software Engineering
                 </LinkPreview> 
-                {" "} accross Europe.
+                {" "} across Europe.
                 <br/><br/>
                 My academic journey has been punctuated by prestigious scholarships from {" "}
+                <LinkPreview
+                url="https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/erasmus-mundus-joint-masters"
+                className=""
+                >Erasmus Mundus,</LinkPreview> 
+                {" "}
                 <LinkPreview
                 url="https://www.ewha.ac.kr/ewhaen/index.do"
                 className=""
@@ -33,11 +38,6 @@ const About = () => {
                 url="https://www.sdream.or.kr/main"
                 className=""
                 >Samsung, </LinkPreview>
-                {" "}
-                <LinkPreview
-                url="https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/erasmus-mundus-joint-masters"
-                className=""
-                >Erasmus Mundus,</LinkPreview> 
                 {" "}
                 and the {" "}
                 <LinkPreview
