@@ -14,14 +14,14 @@ const About = () => {
                 >
                 PSCORE
                 </LinkPreview> 
-                , an NGO focused on North Korean human rights, I&apos;ve used technology to drive impactful change. My passion for sustainability drives me toward a {" "}
+                , an NGO focused on North Korean human rights, I&apos;ve used technology to drive impactful change. Currently, I&apos;m pursuing a {" "}
                 <LinkPreview
                 url="https://se4gd.lutsoftware.com/"
                 className="text-white"
                 >
-                Master&apos;s Degree
+                Master&apos;s Degree in Software Engineering
                 </LinkPreview> 
-                {" "} in Software Engineering for Green Deal.
+                {" "} accross Europe.
                 <br/><br/>
                 My academic journey has been punctuated by prestigious scholarships from {" "}
                 <LinkPreview

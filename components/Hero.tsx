@@ -1,6 +1,7 @@
 import React from 'react';
 import MagicButton from './ui/MagicButton';
 import { FaExternalLinkAlt, FaExternalLinkSquareAlt, FaLocationArrow } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -18,13 +19,13 @@ const Hero = () => {
           I code websites, build apps, and play with loads of data.
         </p>
 
-        <a href="/resume.pdf" target='_blank'>
+        <Link href="/resume.pdf" target='_blank'>
           <MagicButton
             title="Curious? View Resume"
             icon={<FaExternalLinkAlt />}
             position="right"
           />
-        </a>
+        </Link>
       </div>
     </div>
   )

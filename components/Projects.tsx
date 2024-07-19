@@ -10,7 +10,7 @@ const Projects = () => {
         <h1 className='text-md heading'>Projects</h1>
         <div className='mt-12 flex flex-wrap items-center justify-center gap-24'>
             {projects.map((project, i) => (
-                <div key = {i} className='sm:h-[35rem] md:h-[35rem] lg:min-h-[32.5rem]'>
+                <div key = {i} className='sm:h-[35rem] md:h-[35rem] lg:min-h-[32.5rem] w-auto'>
                     <CardContainer className="inter-var">
                         <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-violet-600/[0.4] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[30rem] md:w-auto h-auto rounded-xl p-6 border">
                             <CardItem
