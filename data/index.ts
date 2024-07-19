@@ -49,7 +49,7 @@ export const navItems = [
       desc: "Developed responsive web applications to boost user engagement and accessibility, analyzed user data for actionable insights, implemented tailored user experiences to convey our advocacy, and enhanced our visual identity with creative design and functionality improvements.",
       type: "Hybrid",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      iconLists: ["/wordpress.svg", "/ganalytics.svg", "/html.svg", "/css.svg", "/javascript.svg", "/figma.svg", "/illustrator.svg", "/photoshop.svg"],
     },
     {
       id: 2,
@@ -59,7 +59,7 @@ export const navItems = [
       desc: "Authored engaging articles on Web3 and Blockchain, covering topics like DeFi, NFTs, and smart contracts. Conducted research to explore blockchain's potential in crypto and beyond. Collaborated on content strategies, elevating the company as a tech thought leader.",
       type: "Remote",
       className: "md:col-span-2",
-      thumbnail: "/exp2.svg",
+      iconLists: ["/medium.svg", "/solidity.svg"],
     },
   ];
   

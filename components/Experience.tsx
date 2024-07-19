@@ -29,6 +29,13 @@ const Experience = () => {
                         {card.desc}
                         </p>
                         <span className="text-start text-sm text-gray-400">{card.years} ∙ {card.type}</span>
+                        <div className="flex justify-between items-center mt-2">
+                            <div className="flex items-center space-x-2">
+                            {card.iconLists.map((icon, index) => (
+                                <img key={index} src={icon} alt="icon" className="h-6 w-6" />
+                            ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Button>
