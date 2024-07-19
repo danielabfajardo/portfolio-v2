@@ -12,17 +12,17 @@ const Projects = () => {
             {projects.map((project, i) => (
                 <div key = {i} className='sm:h-[35rem] md:h-[35rem] lg:min-h-[32.5rem] w-auto'>
                     <CardContainer className="inter-var">
-                        <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-violet-600/[0.4] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[30rem] md:w-auto h-auto rounded-xl p-6 border">
+                        <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-violet-600/[0.4] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
                             <CardItem
                                 translateZ="50"
-                                className="text-lg font-bold text-neutral-600 dark:text-white"
+                                className="w-full text-lg font-bold text-neutral-600 dark:text-white"
                             >
                                 {project.title}
                             </CardItem>
                             <CardItem
                                 as="p"
                                 translateZ="60"
-                                className="text-sm max-w-sm mt-2 dark:text-neutral-300 text-gray-400 font-light"
+                                className="w-full text-sm mt-2 dark:text-neutral-300 text-gray-400 font-light"
                             >
                                 {project.des}
                             </CardItem>
@@ -36,11 +36,11 @@ const Projects = () => {
                                 src={project.img}
                                 height="1000"
                                 width="1000"
-                                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                                className="h-40 md:h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                                 alt="thumbnail"
                             />
                             </CardItem>
-                            <div className="flex justify-between items-center mt-20">
+                            <div className="flex justify-between items-center mt-5 md:mt-20">
                             <CardItem
                                 translateZ={20}
                                 translateX={-40}

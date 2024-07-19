@@ -12,7 +12,7 @@ export const navItems = [
       des: "Cloud-based SaaS platform for international students, with a community hub and AI-driven chatbot. It provides university-specific information from curated datasets scraped from official websites.",
       img: "/pj3.svg",
       iconLists: ["/python.svg", "/flutter.svg", "/openai.svg", "/firebase.svg", "/googlecloud.svg", "/figma.svg"],
-      link: "https://github.com/danielabfajardo/StudentiaApp",
+      link: "https://www.canva.com/design/DAGLXNWQwdQ/44aRhptg6Qyl8krEdOl0lQ/view?utm_content=DAGLXNWQwdQ&utm_campaign=designshare&utm_medium=link&utm_source=editor",
     },
     {
       id: 2,
