@@ -13,7 +13,7 @@ const Blogs = () => {
                 <Link href={blog.url} passHref rel="noopener noreferrer" target="_blank">
                     <div className="flex flex-col md:flex-row items-center">
                         <div className="relative h-40 w-full md:w-40">
-                            <Image src={blog.image} alt={blog.title} fill={true} style={{objectFit: "cover"}} className="w-full h-full rounded-l-lg" />
+                            <Image src={blog.image} alt={`Daniela Fajardo - ` + blog.title} fill={true} style={{objectFit: "cover"}} className="w-full h-full rounded-l-lg" />
                         </div>
                         <div className="p-4 flex-1">
                         <h2 className="text-md md:text-lg font-bold mb-2">{blog.title}</h2>

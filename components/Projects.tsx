@@ -49,7 +49,7 @@ const Projects = () => {
                                 <div className="flex justify-between items-center">
                                     <div className="flex items-center space-x-2">
                                     {project.iconLists.map((icon, index) => (
-                                        <img key={index} src={icon} alt="icon" className="h-6 w-6" />
+                                        <Image key={index} src={icon} alt={`Daniela Fajardo ` + icon} width={25} height={25} />
                                     ))}
                                     </div>
                                 </div>

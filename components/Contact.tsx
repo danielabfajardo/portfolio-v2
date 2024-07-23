@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <footer className="w-full">
+    <section id="contact" className="w-full">
         <div className="flex flex-row items-center gap-6 md:gap-12">
           {socialMedia.map((info) => (
             <div
@@ -12,12 +12,12 @@ const Contact = () => {
               className={`cursor-pointer flex justify-center items-center opacity-60 hover:opacity-100 transition duration-200 ${info.id === 3 || info.id === 4 ? 'invert' : '' }`}
             >
               <Link href={info.url} target="_blank" rel="noopener noreferrer">
-                <Image src={info.img} alt="Social Media Links" width={25} height={25} />
+                <Image src={info.img} alt={`Daniela Fajardo ` + info.url} width={25} height={25} />
               </Link>
             </div>
           ))}
         </div>
-    </footer>
+    </section>
   );
 };
 
