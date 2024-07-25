@@ -17,23 +17,28 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const keywords = Array.isArray(metadata.keywords) ? metadata.keywords.join(', ') : metadata.keywords || '';
+
   return (
     <html lang="en">
-      <Script
-        strategy='lazyOnload'
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
-      />
+     <head>
+        <meta name="description" content={metadata.description as string} />
+        <meta name="keywords" content={keywords} />
+        <title>{metadata.title as string}</title>
 
-      <Script id='' strategy='lazyOnload'>
-        {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              
-              gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
-              });
+        <Script
+          strategy='lazyOnload'
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+        />
+        <Script id='google-analytics' strategy='lazyOnload'>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}');
           `}
-      </Script>
+        </Script>
+      </head>
       <body className={inter.className}>
         <ThemeProvider
             attribute="class"
