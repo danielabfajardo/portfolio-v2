@@ -83,9 +83,8 @@ export const LinkPreview = ({
             width={width}
             height={height}
             quality={quality}
-            layout={layout}
             priority={true}
-            alt="hidden image"
+            alt="Daniela Fajardo - hidden image"
           />
         </div>
       ) : null}
@@ -143,10 +142,9 @@ export const LinkPreview = ({
                     width={width}
                     height={height}
                     quality={quality}
-                    layout={layout}
                     priority={true}
                     className="rounded-lg"
-                    alt="preview image"
+                    alt="Daniela Fajardo - preview image"
                   />
                 </Link>
               </motion.div>

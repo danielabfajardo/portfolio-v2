@@ -6,7 +6,7 @@ const About = () => {
     <section id="about">
         <div className="flex flex-col justify-center lg:justify-start relative z-10">
             <h1 className='text-md heading'>About</h1>
-            <p className="mt-12 leading-7 tracking-wider text-md text-gray-400 font-light">
+            <h4 className="mt-12 leading-7 tracking-wider text-md text-gray-400 font-light">
                 I&apos;m dedicated to bringing ideas to life through code. As a software developer at {" "}
                 <LinkPreview
                 url="https://pscore.org/home/"
@@ -55,7 +55,7 @@ const About = () => {
                 >
                 seek, and you shall find.
                 </LinkPreview> 
-            </p>
+            </h4>
         </div>
     </section>
   )
