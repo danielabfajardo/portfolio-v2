@@ -26,6 +26,19 @@ export default function RootLayout({
         <meta name="description" content={metadata.description as string} />
         <meta name="keywords" content={keywords} />
         <title>{metadata.title as string}</title>
+
+        <Script
+          strategy='lazyOnload'
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+        />
+        <Script id='google-analytics' strategy='lazyOnload'>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}');
+          `}
+        </Script>
       </Head>
       <body className={inter.className}>
         <ThemeProvider
@@ -36,18 +49,6 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-        <Script
-          strategy='afterInteractive'
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
-        />
-        <Script id='google-analytics' strategy='afterInteractive'>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}');
-          `}
-        </Script>
       </body>
     </html>
   );
