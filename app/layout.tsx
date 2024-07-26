@@ -26,7 +26,16 @@ export default function RootLayout({
         <meta name="description" content={metadata.description as string} />
         <meta name="keywords" content={keywords} />
         <title>{metadata.title as string}</title>
-
+      </Head>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
         <Script
           strategy='lazyOnload'
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
@@ -39,16 +48,6 @@ export default function RootLayout({
             gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}');
           `}
         </Script>
-      </Head>
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
       </body>
     </html>
   );
